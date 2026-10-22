@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/vital_status/">
+        <link rel="canonical" href="https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/identity/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>Slot: vital_status - monogenic-epilepsy-atlas-schema</title>
+        <title>Slot: identity - monogenic-epilepsy-atlas-schema</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-vital_status" class="md-skip">
+        <a href="#slot-identity" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: vital_status
+              Slot: identity
             
           </span>
         </div>
@@ -474,10 +474,10 @@
   
 
 
-<h1 id="slot-vital_status">Slot: vital_status</h1>
-<p><em>living or dead status</em></p>
+<h1 id="slot-identity">Slot: identity</h1>
+<p><em>A unique identifier for a thing that has carries meaning outside of the context of this schema or a particular instance of this schema.  For example, a concept in an ontology may have a URI that is used to identify it in the context of that ontology, and that URI may be used to identify the concept in other contexts as well.  In contrast, the id slot is intended to be a unique identifier for a thing within the context of this schema or a particular instance of this schema.</em></p>
 <div>
-<p>URI: <a href="https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/vital_status">monogenic_epilepsy_atlas_schema:vital_status</a></p>
+<p>URI: <a href="http://schema.org/identifier">schema:identifier</a></p>
 <!-- no inheritance hierarchy -->
 <h2 id="applicable-classes">Applicable Classes</h2>
 <table>
@@ -490,8 +490,38 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="../NamedThing/">NamedThing</a></td>
+<td>A generic grouping for any named identifiable entity</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../Condition/">Condition</a></td>
+<td>A condition is a disease or disorder that is associated with a person</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../Gene/">Gene</a></td>
+<td>A gene is a segment of DNA that is associated with a condition</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../Organization/">Organization</a></td>
+<td>An organization is a group of people that is associated with a condition or g...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../ExternalReference/">ExternalReference</a></td>
+<td>An external reference is a reference to an entity in an external resource</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../Location/">Location</a></td>
+<td>A location is a physical place where an organization is located</td>
+<td>no</td>
+</tr>
+<tr>
 <td><a href="../Person/">Person</a></td>
-<td>Represents a Person</td>
+<td>A person is an individual who is associated with an organization, condition o...</td>
 <td>no</td>
 </tr>
 </tbody>
@@ -508,11 +538,33 @@
 <tbody>
 <tr>
 <td>Range</td>
-<td><a href="../PersonStatus/">PersonStatus</a></td>
+<td><a href="../Uriorcurie/">Uriorcurie</a></td>
 </tr>
 <tr>
 <td>Domain Of</td>
-<td><a href="../Person/">Person</a></td>
+<td><a href="../NamedThing/">NamedThing</a></td>
+</tr>
+<tr>
+<td>Slot URI</td>
+<td><a href="http://schema.org/identifier">schema:identifier</a></td>
+</tr>
+<tr>
+<td>### Cardinality and Requirements</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Multivalued</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -532,23 +584,30 @@
 <tbody>
 <tr>
 <td>self</td>
-<td>monogenic_epilepsy_atlas_schema:vital_status</td>
+<td>schema:identifier</td>
 </tr>
 <tr>
 <td>native</td>
-<td>monogenic_epilepsy_atlas_schema:vital_status</td>
+<td>monogenic_epilepsy_atlas_schema:identity</td>
 </tr>
 </tbody>
 </table>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
-<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vital_status</span>
-<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">living or dead status</span>
+<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">identity</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">A unique identifier for a thing that has carries meaning outside of the</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">context of this schema or a particular instance of this schema.  For example, a</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">concept in an ontology may have a URI that is used to identify it in the context</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">of that ontology, and that URI may be used to identify the concept in other contexts</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">as well.  In contrast, the id slot is intended to be a unique identifier for a thing</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">within the context of this schema or a particular instance of this schema.</span>
 <span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema</span>
 <span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="nt">slot_uri</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">schema:identifier</span>
 <span class="nt">domain_of</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Person</span>
-<span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PersonStatus</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NamedThing</span>
+<span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">uriorcurie</span>
+<span class="nt">multivalued</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 </code></pre></div>
 </details>
 </div>

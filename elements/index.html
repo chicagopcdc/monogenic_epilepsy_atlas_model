@@ -546,7 +546,7 @@
   
 
 
-<h1 id="monogenic-epilepsy-atlas-schema">monogenic-epilepsy-atlas-schema</h1>
+<h1 id="monogenic-epilepsy-atlas-schema">Monogenic Epilepsy Atlas Schema</h1>
 <p>This is the LinkML schema for the Monogenic Epilepsy Atlas schema</p>
 <p>URI: <a href="https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema">https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema</a></p>
 <p>Name: monogenic-epilepsy-atlas-schema</p>
@@ -560,16 +560,40 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="NamedThing/">NamedThing</a></td>
+<td><a href="GeneCollection/">GeneCollection</a></td>
+<td>A holder for Gene objects</td>
+</tr>
+<tr>
+<td><a href="Thing/">Thing</a></td>
 <td>A generic grouping for any identifiable entity</td>
 </tr>
 <tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Person/">Person</a></td>
-<td>Represents a Person</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="NamedThing/">NamedThing</a></td>
+<td>A generic grouping for any named identifiable entity</td>
 </tr>
 <tr>
-<td><a href="PersonCollection/">PersonCollection</a></td>
-<td>A holder for Person objects</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Condition/">Condition</a></td>
+<td>A condition is a disease or disorder that is associated with a person</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ExternalReference/">ExternalReference</a></td>
+<td>An external reference is a reference to an entity in an external resource</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Gene/">Gene</a></td>
+<td>A gene is a segment of DNA that is associated with a condition</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Location/">Location</a></td>
+<td>A location is a physical place where an organization is located</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Organization/">Organization</a></td>
+<td>An organization is a group of people that is associated with a condition or g...</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Person/">Person</a></td>
+<td>A person is an individual who is associated with an organization, condition o...</td>
 </tr>
 </tbody>
 </table>
@@ -583,36 +607,136 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="age_in_years/">age_in_years</a></td>
-<td>Number of years since birth</td>
+<td><a href="advocates_for_condition/">advocates_for_condition</a></td>
+<td>A list of conditions that an organization advocates for</td>
 </tr>
 <tr>
-<td><a href="birth_date/">birth_date</a></td>
-<td>Date on which a person is born</td>
+<td><a href="advocates_for_gene/">advocates_for_gene</a></td>
+<td>A list of genes that an organization advocates for</td>
+</tr>
+<tr>
+<td><a href="aliases/">aliases</a></td>
+<td>An alternative human-readable name for a thing</td>
+</tr>
+<tr>
+<td><a href="causes_condition/">causes_condition</a></td>
+<td>A list of conditions that are caused by a Gene</td>
+</tr>
+<tr>
+<td><a href="contact_person/">contact_person</a></td>
+<td>The contact person for an organization</td>
+</tr>
+<tr>
+<td><a href="contact_urls/">contact_urls</a></td>
+<td>A link to a web resource that provides more information about how to get in c...</td>
+</tr>
+<tr>
+<td><a href="country/">country</a></td>
+<td>The country where an organization is located</td>
+</tr>
+<tr>
+<td><a href="czi_rao_cohort_year/">czi_rao_cohort_year</a></td>
+<td>The year an organization was a grantee of the CZI Rare as One program</td>
 </tr>
 <tr>
 <td><a href="description/">description</a></td>
 <td>A human-readable description for a thing</td>
 </tr>
 <tr>
+<td><a href="external_references/">external_references</a></td>
+<td>A list of external references that provide more information about a thing</td>
+</tr>
+<tr>
+<td><a href="found_in_corpus/">found_in_corpus</a></td>
+<td>A flag indicating whether a Gene or Condition is found in the corpus of monog...</td>
+</tr>
+<tr>
+<td><a href="genes/">genes</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="genes4epilepsy_listed/">genes4epilepsy_listed</a></td>
+<td>A flag indicating whether a Gene is listed in the Genes4Epilepsy database</td>
+</tr>
+<tr>
+<td><a href="has_registry_or_study/">has_registry_or_study</a></td>
+<td>A flag indicating whether an organization has a registry or study for a condi...</td>
+</tr>
+<tr>
 <td><a href="id/">id</a></td>
 <td>A unique identifier for a thing</td>
+</tr>
+<tr>
+<td><a href="identity/">identity</a></td>
+<td>A unique identifier for a thing that has carries meaning outside of the conte...</td>
+</tr>
+<tr>
+<td><a href="in_scope/">in_scope</a></td>
+<td>A flag indicating whether a Gene, Condition, or Organization is in scope for ...</td>
+</tr>
+<tr>
+<td><a href="is_czi_rao_grantee/">is_czi_rao_grantee</a></td>
+<td>A flag indicating whether an organization is a grantee of the CZI Rare as One...</td>
+</tr>
+<tr>
+<td><a href="leader/">leader</a></td>
+<td>The leader of an organization</td>
+</tr>
+<tr>
+<td><a href="link/">link</a></td>
+<td>A link to a web resource that provides more information about a thing</td>
+</tr>
+<tr>
+<td><a href="logo/">logo</a></td>
+<td>A link to a web resource that provides a logo for an organization</td>
+</tr>
+<tr>
+<td><a href="member_of_organization/">member_of_organization</a></td>
+<td>An organization that a given organization is a member of</td>
 </tr>
 <tr>
 <td><a href="name/">name</a></td>
 <td>A human-readable name for a thing</td>
 </tr>
 <tr>
-<td><a href="people/">people</a></td>
-<td></td>
+<td><a href="num_pages_in_corpus/">num_pages_in_corpus</a></td>
+<td>The number of pages in the corpus of monogenic epilepsy disorders that mentio...</td>
+</tr>
+<tr>
+<td><a href="organization_type/">organization_type</a></td>
+<td>The type of organization</td>
+</tr>
+<tr>
+<td><a href="pathophysiologic_mechanism/">pathophysiologic_mechanism</a></td>
+<td>A description of the pathophysiologic mechanism of a Gene or Condition, if kn...</td>
 </tr>
 <tr>
 <td><a href="primary_email/">primary_email</a></td>
 <td>The main email address of a person</td>
 </tr>
 <tr>
-<td><a href="vital_status/">vital_status</a></td>
-<td>living or dead status</td>
+<td><a href="primary_location/">primary_location</a></td>
+<td>The location of an organization</td>
+</tr>
+<tr>
+<td><a href="professional_title/">professional_title</a></td>
+<td>The professional title of a person</td>
+</tr>
+<tr>
+<td><a href="reach/">reach</a></td>
+<td>The reach of an organization</td>
+</tr>
+<tr>
+<td><a href="reports_seizures/">reports_seizures</a></td>
+<td>A flag indicating whether a condition is associated with seizures or epilepsy</td>
+</tr>
+<tr>
+<td><a href="state/">state</a></td>
+<td>The state or province where an organization is located</td>
+</tr>
+<tr>
+<td><a href="year_founded/">year_founded</a></td>
+<td>The year an organization was founded</td>
 </tr>
 </tbody>
 </table>
@@ -626,8 +750,24 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="PersonStatus/">PersonStatus</a></td>
-<td>The vital status of a person</td>
+<td><a href="Country/">Country</a></td>
+<td>A simple enumeration for the countries of the world</td>
+</tr>
+<tr>
+<td><a href="OrganizationType/">OrganizationType</a></td>
+<td>A simple enumeration for the type of organization</td>
+</tr>
+<tr>
+<td><a href="Reach/">Reach</a></td>
+<td>A simple enumeration for the reach of an organization</td>
+</tr>
+<tr>
+<td><a href="UsaState/">UsaState</a></td>
+<td>A simple enumeration for the US states</td>
+</tr>
+<tr>
+<td><a href="YesNoUnknown/">YesNoUnknown</a></td>
+<td>A simple enumeration for yes, no, or unknown</td>
 </tr>
 </tbody>
 </table>

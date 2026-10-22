@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/age_in_years/">
+        <link rel="canonical" href="https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/Reach/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>Slot: age_in_years - monogenic-epilepsy-atlas-schema</title>
+        <title>Enum: Reach - monogenic-epilepsy-atlas-schema</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-age_in_years" class="md-skip">
+        <a href="#enum-reach" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: age_in_years
+              Enum: Reach
             
           </span>
         </div>
@@ -365,10 +365,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#applicable-classes" class="md-nav__link">
+  <a href="#permissible-values" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Applicable Classes
+        Permissible Values
       
     </span>
   </a>
@@ -376,30 +376,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
+  <a href="#slots" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Properties
+        Slots
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Properties">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#type-and-range" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Type and Range
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -428,17 +411,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mappings" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Mappings
-      
-    </span>
-  </a>
   
 </li>
       
@@ -474,45 +446,49 @@
   
 
 
-<h1 id="slot-age_in_years">Slot: age_in_years</h1>
-<p><em>Number of years since birth</em></p>
+<h1 id="enum-reach">Enum: Reach</h1>
+<p><em>A simple enumeration for the reach of an organization</em></p>
 <div>
-<p>URI: <a href="https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/age_in_years">monogenic_epilepsy_atlas_schema:age_in_years</a></p>
-<!-- no inheritance hierarchy -->
-<h2 id="applicable-classes">Applicable Classes</h2>
+<p>URI: <a href="https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/Reach">monogenic_epilepsy_atlas_schema:Reach</a></p>
+<h2 id="permissible-values">Permissible Values</h2>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>REGIONAL</td>
+<td>None</td>
+<td>A regional organization</td>
+</tr>
+<tr>
+<td>NATIONAL</td>
+<td>None</td>
+<td>A national organization</td>
+</tr>
+<tr>
+<td>INTERNATIONAL</td>
+<td>None</td>
+<td>An international organization</td>
+</tr>
+</tbody>
+</table>
+<h2 id="slots">Slots</h2>
 <table>
 <thead>
 <tr>
 <th>Name</th>
 <th>Description</th>
-<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="../Person/">Person</a></td>
-<td>Represents a Person</td>
-<td>no</td>
-</tr>
-</tbody>
-</table>
-<h2 id="properties">Properties</h2>
-<h3 id="type-and-range">Type and Range</h3>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Range</td>
-<td><a href="../Integer/">Integer</a></td>
-</tr>
-<tr>
-<td>Domain Of</td>
-<td><a href="../Person/">Person</a></td>
+<td><a href="../reach/">reach</a></td>
+<td>The reach of an organization</td>
 </tr>
 </tbody>
 </table>
@@ -521,34 +497,22 @@
 <ul>
 <li>from schema: <a href="https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema">https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema</a></li>
 </ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>monogenic_epilepsy_atlas_schema:age_in_years</td>
-</tr>
-<tr>
-<td>native</td>
-<td>monogenic_epilepsy_atlas_schema:age_in_years</td>
-</tr>
-</tbody>
-</table>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
-<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">age_in_years</span>
-<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Number of years since birth</span>
+<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Reach</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">A simple enumeration for the reach of an organization</span>
 <span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema</span>
 <span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
-<span class="nt">domain_of</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Person</span>
-<span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">integer</span>
+<span class="nt">permissible_values</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">REGIONAL</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">REGIONAL</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">A regional organization</span>
+<span class="w">  </span><span class="nt">NATIONAL</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NATIONAL</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">A national organization</span>
+<span class="w">  </span><span class="nt">INTERNATIONAL</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">INTERNATIONAL</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">An international organization</span>
 </code></pre></div>
 </details>
 </div>

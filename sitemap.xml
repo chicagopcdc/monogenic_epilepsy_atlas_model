@@ -17,6 +17,14 @@
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/Condition/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/Country/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
          <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/Curie/</loc>
          <lastmod>2026-10-22</lastmod>
     </url>
@@ -41,7 +49,19 @@
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/ExternalReference/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
          <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/Float/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/Gene/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/GeneCollection/</loc>
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
@@ -54,6 +74,10 @@
     </url>
     <url>
          <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/Jsonpointer/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/Location/</loc>
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
@@ -73,15 +97,19 @@
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/Organization/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/OrganizationType/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
          <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/Person/</loc>
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
-         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/PersonCollection/</loc>
-         <lastmod>2026-10-22</lastmod>
-    </url>
-    <url>
-         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/PersonStatus/</loc>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/Reach/</loc>
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
@@ -90,6 +118,10 @@
     </url>
     <url>
          <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/String/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/Thing/</loc>
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
@@ -105,11 +137,43 @@
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
-         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/age_in_years/</loc>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/UsaState/</loc>
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
-         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/birth_date/</loc>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/YesNoUnknown/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/advocates_for_condition/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/advocates_for_gene/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/aliases/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/causes_condition/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/contact_person/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/contact_urls/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/country/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/czi_rao_cohort_year/</loc>
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
@@ -117,7 +181,55 @@
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/external_references/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/found_in_corpus/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/genes/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/genes4epilepsy_listed/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/has_registry_or_study/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
          <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/id/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/identity/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/in_scope/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/is_czi_rao_grantee/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/leader/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/link/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/logo/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/member_of_organization/</loc>
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
@@ -129,7 +241,15 @@
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
-         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/people/</loc>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/num_pages_in_corpus/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/organization_type/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/pathophysiologic_mechanism/</loc>
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
@@ -137,7 +257,27 @@
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
-         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/vital_status/</loc>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/primary_location/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/professional_title/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/reach/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/reports_seizures/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/state/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/year_founded/</loc>
          <lastmod>2026-10-22</lastmod>
     </url>
 </urlset>

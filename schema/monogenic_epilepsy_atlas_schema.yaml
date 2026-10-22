@@ -1,6 +1,6 @@
 name: monogenic-epilepsy-atlas-schema
 description: This is the LinkML schema for the Monogenic Epilepsy Atlas schema
-title: monogenic-epilepsy-atlas-schema
+title: Monogenic Epilepsy Atlas Schema
 see_also:
 - https://bfurner.github.io/monogenic-epilepsy-atlas-schema
 id: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
@@ -14,18 +14,9 @@ prefixes:
   linkml:
     prefix_prefix: linkml
     prefix_reference: https://w3id.org/linkml/
-  biolink:
-    prefix_prefix: biolink
-    prefix_reference: https://w3id.org/biolink/vocab/
   schema:
     prefix_prefix: schema
     prefix_reference: http://schema.org/
-  PATO:
-    prefix_prefix: PATO
-    prefix_reference: http://purl.obolibrary.org/obo/PATO_
-  example:
-    prefix_prefix: example
-    prefix_reference: http://www.example.org/rdf#
 default_prefix: monogenic_epilepsy_atlas_schema
 default_range: string
 types:
@@ -298,25 +289,249 @@ types:
     uri: xsd:string
     repr: str
 enums:
-  PersonStatus:
-    name: PersonStatus
-    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/PersonStatus
-    description: The vital status of a person
+  YesNoUnknown:
+    name: YesNoUnknown
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/YesNoUnknown
+    description: A simple enumeration for yes, no, or unknown
     from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
     permissible_values:
-      ALIVE:
-        text: ALIVE
-        description: the person is living
-        meaning: PATO:0001421
-      DEAD:
-        text: DEAD
-        description: the person is deceased
-        meaning: PATO:0001422
+      'True':
+        text: 'True'
+        description: 'True'
+      'False':
+        text: 'False'
+        description: 'False'
       UNKNOWN:
         text: UNKNOWN
-        description: the vital status is not known
-        todos:
-        - map this to an ontology
+        description: unknown
+  OrganizationType:
+    name: OrganizationType
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/OrganizationType
+    description: A simple enumeration for the type of organization
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    permissible_values:
+      CHAPTER:
+        text: CHAPTER
+        description: A chapter (e.g., regional)
+      CONSORTIUM:
+        text: CONSORTIUM
+        description: A consortium or umbrella organization
+      INFORMAL_COMMUNITY:
+        text: INFORMAL_COMMUNITY
+        description: An informal community (e.g., a Facebook group)
+      PATIENT_ADVOCACY:
+        text: PATIENT_ADVOCACY
+        description: A patient advocacy organization
+  UsaState:
+    name: UsaState
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/UsaState
+    description: A simple enumeration for the US states
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    permissible_values:
+      AL:
+        text: AL
+        description: Alabama
+      AK:
+        text: AK
+        description: Alaska
+      AZ:
+        text: AZ
+        description: Arizona
+      AR:
+        text: AR
+        description: Arkansas
+      CA:
+        text: CA
+        description: California
+      CO:
+        text: CO
+        description: Colorado
+      CT:
+        text: CT
+        description: Connecticut
+      DE:
+        text: DE
+        description: Delaware
+      FL:
+        text: FL
+        description: Florida
+      GA:
+        text: GA
+        description: Georgia
+      HI:
+        text: HI
+        description: Hawaii
+      ID:
+        text: ID
+        description: Idaho
+      IL:
+        text: IL
+        description: Illinois
+      IN:
+        text: IN
+        description: Indiana
+      IA:
+        text: IA
+        description: Iowa
+      KS:
+        text: KS
+        description: Kansas
+      KY:
+        text: KY
+        description: Kentucky
+      LA:
+        text: LA
+        description: Louisiana
+      ME:
+        text: ME
+        description: Maine
+      MD:
+        text: MD
+        description: Maryland
+      MA:
+        text: MA
+        description: Massachusetts
+      MI:
+        text: MI
+        description: Michigan
+      MN:
+        text: MN
+        description: Minnesota
+      MS:
+        text: MS
+        description: Mississippi
+      MO:
+        text: MO
+        description: Missouri
+      MT:
+        text: MT
+        description: Montana
+      NE:
+        text: NE
+        description: Nebraska
+      NV:
+        text: NV
+        description: Nevada
+      NH:
+        text: NH
+        description: New Hampshire
+      NJ:
+        text: NJ
+        description: New Jersey
+      NM:
+        text: NM
+        description: New Mexico
+      NY:
+        text: NY
+        description: New York
+      NC:
+        text: NC
+        description: North Carolina
+      ND:
+        text: ND
+        description: North Dakota
+      OH:
+        text: OH
+        description: Ohio
+      OK:
+        text: OK
+        description: Oklahoma
+      OR:
+        text: OR
+        description: Oregon
+      PA:
+        text: PA
+        description: Pennsylvania
+      RI:
+        text: RI
+        description: Rhode Island
+      SC:
+        text: SC
+        description: South Carolina
+      SD:
+        text: SD
+        description: South Dakota
+      TN:
+        text: TN
+        description: Tennessee
+      TX:
+        text: TX
+        description: Texas
+      UT:
+        text: UT
+        description: Utah
+      VT:
+        text: VT
+        description: Vermont
+      VA:
+        text: VA
+        description: Virginia
+      WA:
+        text: WA
+        description: Washington
+      WV:
+        text: WV
+        description: West Virginia
+      WI:
+        text: WI
+        description: Wisconsin
+      WY:
+        text: WY
+        description: Wyoming
+  Country:
+    name: Country
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/Country
+    description: A simple enumeration for the countries of the world
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    permissible_values:
+      US:
+        text: US
+        description: United States
+      CA:
+        text: CA
+        description: Canada
+      MX:
+        text: MX
+        description: Mexico
+      GB:
+        text: GB
+        description: United Kingdom
+      FR:
+        text: FR
+        description: France
+      DE:
+        text: DE
+        description: Germany
+      IT:
+        text: IT
+        description: Italy
+      ES:
+        text: ES
+        description: Spain
+      CN:
+        text: CN
+        description: China
+      JP:
+        text: JP
+        description: Japan
+      IN:
+        text: IN
+        description: India
+  Reach:
+    name: Reach
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/Reach
+    description: A simple enumeration for the reach of an organization
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    permissible_values:
+      REGIONAL:
+        text: REGIONAL
+        description: A regional organization
+      NATIONAL:
+        text: NATIONAL
+        description: A national organization
+      INTERNATIONAL:
+        text: INTERNATIONAL
+        description: An international organization
 slots:
   id:
     name: id
@@ -327,11 +542,30 @@ slots:
     - schema:identifier
     slot_uri: schema:identifier
     identifier: true
+    owner: Thing
+    domain_of:
+    - Thing
+    range: uriorcurie
+    required: true
+  identity:
+    name: identity
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/identity
+    description: A unique identifier for a thing that has carries meaning outside
+      of the context of this schema or a particular instance of this schema.  For
+      example, a concept in an ontology may have a URI that is used to identify it
+      in the context of that ontology, and that URI may be used to identify the concept
+      in other contexts as well.  In contrast, the id slot is intended to be a unique
+      identifier for a thing within the context of this schema or a particular instance
+      of this schema.
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    mappings:
+    - schema:identifier
+    slot_uri: schema:identifier
     owner: NamedThing
     domain_of:
     - NamedThing
     range: uriorcurie
-    required: true
+    multivalued: true
   name:
     name: name
     definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/name
@@ -343,6 +577,20 @@ slots:
     owner: NamedThing
     domain_of:
     - NamedThing
+    range: string
+  aliases:
+    name: aliases
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/aliases
+    description: An alternative human-readable name for a thing
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    mappings:
+    - schema:alternateName
+    slot_uri: schema:alternateName
+    owner: Organization
+    domain_of:
+    - Condition
+    - Gene
+    - Organization
     range: string
   description:
     name: description
@@ -368,50 +616,1028 @@ slots:
     domain_of:
     - Person
     range: string
-  birth_date:
-    name: birth_date
-    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/birth_date
-    description: Date on which a person is born
+  link:
+    name: link
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/link
+    description: A link to a web resource that provides more information about a thing
     from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
     mappings:
-    - schema:birthDate
-    slot_uri: schema:birthDate
-    owner: Person
+    - schema:url
+    slot_uri: schema:url
+    owner: ExternalReference
     domain_of:
-    - Person
-    range: date
-  age_in_years:
-    name: age_in_years
-    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/age_in_years
-    description: Number of years since birth
+    - ExternalReference
+    range: uriorcurie
+  external_references:
+    name: external_references
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/external_references
+    description: A list of external references that provide more information about
+      a thing
     from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
-    slot_uri: monogenic_epilepsy_atlas_schema:age_in_years
-    owner: Person
+    slot_uri: monogenic_epilepsy_atlas_schema:external_references
+    owner: Organization
     domain_of:
-    - Person
+    - Condition
+    - Gene
+    - Organization
+    range: ExternalReference
+    multivalued: true
+  reports_seizures:
+    name: reports_seizures
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/reports_seizures
+    description: A flag indicating whether a condition is associated with seizures
+      or epilepsy
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    slot_uri: monogenic_epilepsy_atlas_schema:reports_seizures
+    owner: Condition
+    domain_of:
+    - Condition
+    range: YesNoUnknown
+  found_in_corpus:
+    name: found_in_corpus
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/found_in_corpus
+    description: A flag indicating whether a Gene or Condition is found in the corpus
+      of monogenic epilepsy disorders
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    slot_uri: monogenic_epilepsy_atlas_schema:found_in_corpus
+    owner: Gene
+    domain_of:
+    - Condition
+    - Gene
+    range: YesNoUnknown
+  num_pages_in_corpus:
+    name: num_pages_in_corpus
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/num_pages_in_corpus
+    description: The number of pages in the corpus of monogenic epilepsy disorders
+      that mention this Gene or Condition
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    slot_uri: monogenic_epilepsy_atlas_schema:num_pages_in_corpus
+    owner: Gene
+    domain_of:
+    - Condition
+    - Gene
     range: integer
-  vital_status:
-    name: vital_status
-    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/vital_status
-    description: living or dead status
+  pathophysiologic_mechanism:
+    name: pathophysiologic_mechanism
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/pathophysiologic_mechanism
+    description: A description of the pathophysiologic mechanism of a Gene or Condition,
+      if known.  For example, a gene may be associated with a condition because it
+      is involved in a particular biological pathway that is disrupted in the condition.  In
+      this case, the pathophysiologic mechanism would be the biological pathway that
+      is disrupted.
     from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
-    slot_uri: monogenic_epilepsy_atlas_schema:vital_status
+    slot_uri: monogenic_epilepsy_atlas_schema:pathophysiologic_mechanism
+    owner: Gene
+    domain_of:
+    - Gene
+    range: string
+  genes4epilepsy_listed:
+    name: genes4epilepsy_listed
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/genes4epilepsy_listed
+    description: A flag indicating whether a Gene is listed in the Genes4Epilepsy
+      database
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    slot_uri: monogenic_epilepsy_atlas_schema:genes4epilepsy_listed
+    owner: Gene
+    domain_of:
+    - Gene
+    range: YesNoUnknown
+  causes_condition:
+    name: causes_condition
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/causes_condition
+    description: A list of conditions that are caused by a Gene
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    slot_uri: monogenic_epilepsy_atlas_schema:causes_condition
+    owner: Gene
+    domain_of:
+    - Gene
+    range: Condition
+  organization_type:
+    name: organization_type
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/organization_type
+    description: The type of organization.  For example, a research organization,
+      a patient advocacy organization, or a professional society.
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    slot_uri: monogenic_epilepsy_atlas_schema:organization_type
+    owner: Organization
+    domain_of:
+    - Organization
+    range: OrganizationType
+  primary_location:
+    name: primary_location
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/primary_location
+    description: The location of an organization.  For example, a state and/or country.
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    slot_uri: monogenic_epilepsy_atlas_schema:primary_location
+    owner: Organization
+    domain_of:
+    - Organization
+    range: Location
+  state:
+    name: state
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/state
+    description: The state or province where an organization is located
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    slot_uri: monogenic_epilepsy_atlas_schema:state
+    owner: Location
+    domain_of:
+    - Location
+    range: UsaState
+  country:
+    name: country
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/country
+    description: The country where an organization is located
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    slot_uri: monogenic_epilepsy_atlas_schema:country
+    owner: Location
+    domain_of:
+    - Location
+    range: Country
+  reach:
+    name: reach
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/reach
+    description: The reach of an organization.  For example, a patient advocacy organization
+      may have a regional, national, or international reach.
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    slot_uri: monogenic_epilepsy_atlas_schema:reach
+    owner: Organization
+    domain_of:
+    - Organization
+    range: Reach
+  year_founded:
+    name: year_founded
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/year_founded
+    description: The year an organization was founded
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    slot_uri: monogenic_epilepsy_atlas_schema:year_founded
+    owner: Organization
+    domain_of:
+    - Organization
+    range: integer
+  in_scope:
+    name: in_scope
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/in_scope
+    description: A flag indicating whether a Gene, Condition, or Organization is in
+      scope for the Monogenic Epilepsy Atlas project
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    slot_uri: monogenic_epilepsy_atlas_schema:in_scope
+    owner: Organization
+    domain_of:
+    - Condition
+    - Gene
+    - Organization
+    range: YesNoUnknown
+  professional_title:
+    name: professional_title
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/professional_title
+    description: The professional title of a person.  For example, a researcher may
+      have the title of "Professor" or "Research Scientist".
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    slot_uri: monogenic_epilepsy_atlas_schema:professional_title
     owner: Person
     domain_of:
     - Person
-    range: PersonStatus
-  personCollection__people:
-    name: personCollection__people
+    range: string
+  leader:
+    name: leader
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/leader
+    description: The leader of an organization.  For example, the president of a professional
+      society or the director of a research organization.
     from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
-    slot_uri: monogenic_epilepsy_atlas_schema:people
-    alias: people
-    owner: PersonCollection
+    slot_uri: monogenic_epilepsy_atlas_schema:leader
+    owner: Organization
     domain_of:
-    - PersonCollection
+    - Organization
     range: Person
+  contact_person:
+    name: contact_person
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/contact_person
+    description: The contact person for an organization.  For example, the person
+      who is responsible for managing the organization's website or social media accounts.
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    slot_uri: monogenic_epilepsy_atlas_schema:contact_person
+    owner: Organization
+    domain_of:
+    - Organization
+    range: Person
+  contact_urls:
+    name: contact_urls
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/contact_urls
+    description: A link to a web resource that provides more information about how
+      to get in contact with an organization
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    slot_uri: monogenic_epilepsy_atlas_schema:contact_urls
+    owner: Organization
+    domain_of:
+    - Organization
+    range: uriorcurie
+  logo:
+    name: logo
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/logo
+    description: A link to a web resource that provides a logo for an organization
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    slot_uri: monogenic_epilepsy_atlas_schema:logo
+    owner: Organization
+    domain_of:
+    - Organization
+    range: uriorcurie
+  has_registry_or_study:
+    name: has_registry_or_study
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/has_registry_or_study
+    description: A flag indicating whether an organization has a registry or study
+      for a condition or gene
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    slot_uri: monogenic_epilepsy_atlas_schema:has_registry_or_study
+    owner: Organization
+    domain_of:
+    - Organization
+    range: YesNoUnknown
+  is_czi_rao_grantee:
+    name: is_czi_rao_grantee
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/is_czi_rao_grantee
+    description: A flag indicating whether an organization is a grantee of the CZI
+      Rare as One program
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    slot_uri: monogenic_epilepsy_atlas_schema:is_czi_rao_grantee
+    owner: Organization
+    domain_of:
+    - Organization
+    range: YesNoUnknown
+  czi_rao_cohort_year:
+    name: czi_rao_cohort_year
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/czi_rao_cohort_year
+    description: The year an organization was a grantee of the CZI Rare as One program
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    slot_uri: monogenic_epilepsy_atlas_schema:czi_rao_cohort_year
+    owner: Organization
+    domain_of:
+    - Organization
+    range: integer
+  advocates_for_condition:
+    name: advocates_for_condition
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/advocates_for_condition
+    description: A list of conditions that an organization advocates for.  For example,
+      a patient advocacy organization may advocate for a particular condition or set
+      of conditions.
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    slot_uri: monogenic_epilepsy_atlas_schema:advocates_for_condition
+    owner: Organization
+    domain_of:
+    - Organization
+    range: Condition
+  advocates_for_gene:
+    name: advocates_for_gene
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/advocates_for_gene
+    description: A list of genes that an organization advocates for.  For example,
+      a patient advocacy organization may advocate for a particular gene or set of
+      genes.
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    slot_uri: monogenic_epilepsy_atlas_schema:advocates_for_gene
+    owner: Organization
+    domain_of:
+    - Organization
+    range: Gene
+  member_of_organization:
+    name: member_of_organization
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/member_of_organization
+    description: An organization that a given organization is a member of.  For example,
+      a patient advocacy organization may be a member of a larger umbrella organization.
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    slot_uri: monogenic_epilepsy_atlas_schema:member_of_organization
+    owner: Organization
+    domain_of:
+    - Organization
+    range: Organization
+  geneCollection__genes:
+    name: geneCollection__genes
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    slot_uri: monogenic_epilepsy_atlas_schema:genes
+    alias: genes
+    owner: GeneCollection
+    domain_of:
+    - GeneCollection
+    range: Gene
     multivalued: true
     inlined: true
     inlined_as_list: true
+  Thing_id:
+    name: Thing_id
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/id
+    description: A unique identifier for a thing
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    mappings:
+    - schema:identifier
+    is_a: id
+    domain: Thing
+    slot_uri: schema:identifier
+    identifier: true
+    alias: id
+    owner: Thing
+    domain_of:
+    - Thing
+    is_usage_slot: true
+    usage_slot_name: id
+    range: uriorcurie
+    required: true
+  Thing_identity:
+    name: Thing_identity
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/identity
+    description: A unique identifier for a thing that has carries meaning outside
+      of the context of this schema or a particular instance of this schema.  For
+      example, a concept in an ontology may have a URI that is used to identify it
+      in the context of that ontology, and that URI may be used to identify the concept
+      in other contexts as well.  In contrast, the id slot is intended to be a unique
+      identifier for a thing within the context of this schema or a particular instance
+      of this schema.
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    mappings:
+    - schema:identifier
+    is_a: identity
+    domain: Thing
+    slot_uri: schema:identifier
+    alias: identity
+    owner: Thing
+    domain_of:
+    - Thing
+    is_usage_slot: true
+    usage_slot_name: identity
+    range: uriorcurie
+    required: false
+    multivalued: true
+  NamedThing_identity:
+    name: NamedThing_identity
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/identity
+    description: A unique identifier for a thing that has carries meaning outside
+      of the context of this schema or a particular instance of this schema.  For
+      example, a concept in an ontology may have a URI that is used to identify it
+      in the context of that ontology, and that URI may be used to identify the concept
+      in other contexts as well.  In contrast, the id slot is intended to be a unique
+      identifier for a thing within the context of this schema or a particular instance
+      of this schema.
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    mappings:
+    - schema:identifier
+    is_a: Thing_identity
+    domain: NamedThing
+    slot_uri: schema:identifier
+    alias: identity
+    owner: NamedThing
+    domain_of:
+    - NamedThing
+    is_usage_slot: true
+    usage_slot_name: identity
+    range: uriorcurie
+    required: false
+    multivalued: true
+  NamedThing_name:
+    name: NamedThing_name
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/name
+    description: A human-readable name for a thing
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    mappings:
+    - schema:name
+    is_a: name
+    domain: NamedThing
+    slot_uri: schema:name
+    alias: name
+    owner: NamedThing
+    domain_of:
+    - NamedThing
+    is_usage_slot: true
+    usage_slot_name: name
+    range: string
+    required: true
+  NamedThing_description:
+    name: NamedThing_description
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/description
+    description: A human-readable description for a thing
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    mappings:
+    - schema:description
+    is_a: description
+    domain: NamedThing
+    slot_uri: schema:description
+    alias: description
+    owner: NamedThing
+    domain_of:
+    - NamedThing
+    is_usage_slot: true
+    usage_slot_name: description
+    range: string
+    required: false
+  Condition_aliases:
+    name: Condition_aliases
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/aliases
+    description: An alternative human-readable name for a thing
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    mappings:
+    - schema:alternateName
+    is_a: aliases
+    domain: Condition
+    slot_uri: schema:alternateName
+    alias: aliases
+    owner: Condition
+    domain_of:
+    - Condition
+    is_usage_slot: true
+    usage_slot_name: aliases
+    range: string
+    required: false
+    multivalued: true
+  Condition_external_references:
+    name: Condition_external_references
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/external_references
+    description: A list of external references that provide more information about
+      a thing
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: external_references
+    domain: Condition
+    slot_uri: monogenic_epilepsy_atlas_schema:external_references
+    alias: external_references
+    owner: Condition
+    domain_of:
+    - Condition
+    is_usage_slot: true
+    usage_slot_name: external_references
+    range: ExternalReference
+    required: false
+    multivalued: true
+  Condition_reports_seizures:
+    name: Condition_reports_seizures
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/reports_seizures
+    description: A flag indicating whether a condition is associated with seizures
+      or epilepsy
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: reports_seizures
+    domain: Condition
+    slot_uri: monogenic_epilepsy_atlas_schema:reports_seizures
+    alias: reports_seizures
+    owner: Condition
+    domain_of:
+    - Condition
+    is_usage_slot: true
+    usage_slot_name: reports_seizures
+    range: YesNoUnknown
+    required: true
+    multivalued: false
+  Condition_found_in_corpus:
+    name: Condition_found_in_corpus
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/found_in_corpus
+    description: A flag indicating whether a Gene or Condition is found in the corpus
+      of monogenic epilepsy disorders
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: found_in_corpus
+    domain: Condition
+    slot_uri: monogenic_epilepsy_atlas_schema:found_in_corpus
+    alias: found_in_corpus
+    owner: Condition
+    domain_of:
+    - Condition
+    is_usage_slot: true
+    usage_slot_name: found_in_corpus
+    range: YesNoUnknown
+    required: true
+    multivalued: false
+  Condition_num_pages_in_corpus:
+    name: Condition_num_pages_in_corpus
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/num_pages_in_corpus
+    description: The number of pages in the corpus of monogenic epilepsy disorders
+      that mention this Gene or Condition
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: num_pages_in_corpus
+    domain: Condition
+    slot_uri: monogenic_epilepsy_atlas_schema:num_pages_in_corpus
+    alias: num_pages_in_corpus
+    owner: Condition
+    domain_of:
+    - Condition
+    is_usage_slot: true
+    usage_slot_name: num_pages_in_corpus
+    range: integer
+    required: false
+    multivalued: false
+  Condition_in_scope:
+    name: Condition_in_scope
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/in_scope
+    description: A flag indicating whether a Gene, Condition, or Organization is in
+      scope for the Monogenic Epilepsy Atlas project
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: in_scope
+    domain: Condition
+    slot_uri: monogenic_epilepsy_atlas_schema:in_scope
+    alias: in_scope
+    owner: Condition
+    domain_of:
+    - Condition
+    is_usage_slot: true
+    usage_slot_name: in_scope
+    range: YesNoUnknown
+    required: true
+    multivalued: false
+  Gene_aliases:
+    name: Gene_aliases
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/aliases
+    description: An alternative human-readable name for a thing
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    mappings:
+    - schema:alternateName
+    is_a: aliases
+    domain: Gene
+    slot_uri: schema:alternateName
+    alias: aliases
+    owner: Gene
+    domain_of:
+    - Gene
+    is_usage_slot: true
+    usage_slot_name: aliases
+    range: string
+    required: false
+    multivalued: true
+  Gene_external_references:
+    name: Gene_external_references
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/external_references
+    description: A list of external references that provide more information about
+      a thing
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: external_references
+    domain: Gene
+    slot_uri: monogenic_epilepsy_atlas_schema:external_references
+    alias: external_references
+    owner: Gene
+    domain_of:
+    - Gene
+    is_usage_slot: true
+    usage_slot_name: external_references
+    range: ExternalReference
+    required: false
+    multivalued: true
+  Gene_found_in_corpus:
+    name: Gene_found_in_corpus
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/found_in_corpus
+    description: A flag indicating whether a Gene or Condition is found in the corpus
+      of monogenic epilepsy disorders
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: found_in_corpus
+    domain: Gene
+    slot_uri: monogenic_epilepsy_atlas_schema:found_in_corpus
+    alias: found_in_corpus
+    owner: Gene
+    domain_of:
+    - Gene
+    is_usage_slot: true
+    usage_slot_name: found_in_corpus
+    range: YesNoUnknown
+    required: true
+    multivalued: false
+  Gene_num_pages_in_corpus:
+    name: Gene_num_pages_in_corpus
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/num_pages_in_corpus
+    description: The number of pages in the corpus of monogenic epilepsy disorders
+      that mention this Gene or Condition
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: num_pages_in_corpus
+    domain: Gene
+    slot_uri: monogenic_epilepsy_atlas_schema:num_pages_in_corpus
+    alias: num_pages_in_corpus
+    owner: Gene
+    domain_of:
+    - Gene
+    is_usage_slot: true
+    usage_slot_name: num_pages_in_corpus
+    range: integer
+    required: false
+    multivalued: false
+  Gene_pathophysiologic_mechanism:
+    name: Gene_pathophysiologic_mechanism
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/pathophysiologic_mechanism
+    description: A description of the pathophysiologic mechanism of a Gene or Condition,
+      if known.  For example, a gene may be associated with a condition because it
+      is involved in a particular biological pathway that is disrupted in the condition.  In
+      this case, the pathophysiologic mechanism would be the biological pathway that
+      is disrupted.
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: pathophysiologic_mechanism
+    domain: Gene
+    slot_uri: monogenic_epilepsy_atlas_schema:pathophysiologic_mechanism
+    alias: pathophysiologic_mechanism
+    owner: Gene
+    domain_of:
+    - Gene
+    is_usage_slot: true
+    usage_slot_name: pathophysiologic_mechanism
+    range: string
+    required: false
+    multivalued: false
+  Gene_genes4epilepsy_listed:
+    name: Gene_genes4epilepsy_listed
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/genes4epilepsy_listed
+    description: A flag indicating whether a Gene is listed in the Genes4Epilepsy
+      database
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: genes4epilepsy_listed
+    domain: Gene
+    slot_uri: monogenic_epilepsy_atlas_schema:genes4epilepsy_listed
+    alias: genes4epilepsy_listed
+    owner: Gene
+    domain_of:
+    - Gene
+    is_usage_slot: true
+    usage_slot_name: genes4epilepsy_listed
+    range: YesNoUnknown
+    required: true
+    multivalued: false
+  Gene_causes_condition:
+    name: Gene_causes_condition
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/causes_condition
+    description: A list of conditions that are caused by a Gene
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: causes_condition
+    domain: Gene
+    slot_uri: monogenic_epilepsy_atlas_schema:causes_condition
+    alias: causes_condition
+    owner: Gene
+    domain_of:
+    - Gene
+    is_usage_slot: true
+    usage_slot_name: causes_condition
+    range: Condition
+    required: false
+    multivalued: true
+  Gene_in_scope:
+    name: Gene_in_scope
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/in_scope
+    description: A flag indicating whether a Gene, Condition, or Organization is in
+      scope for the Monogenic Epilepsy Atlas project
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: in_scope
+    domain: Gene
+    slot_uri: monogenic_epilepsy_atlas_schema:in_scope
+    alias: in_scope
+    owner: Gene
+    domain_of:
+    - Gene
+    is_usage_slot: true
+    usage_slot_name: in_scope
+    range: YesNoUnknown
+    required: true
+    multivalued: false
+  Organization_aliases:
+    name: Organization_aliases
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/aliases
+    description: An alternative human-readable name for a thing
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    mappings:
+    - schema:alternateName
+    is_a: aliases
+    domain: Organization
+    slot_uri: schema:alternateName
+    alias: aliases
+    owner: Organization
+    domain_of:
+    - Organization
+    is_usage_slot: true
+    usage_slot_name: aliases
+    range: string
+    required: false
+    multivalued: true
+  Organization_external_references:
+    name: Organization_external_references
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/external_references
+    description: A list of external references that provide more information about
+      a thing
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: external_references
+    domain: Organization
+    slot_uri: monogenic_epilepsy_atlas_schema:external_references
+    alias: external_references
+    owner: Organization
+    domain_of:
+    - Organization
+    is_usage_slot: true
+    usage_slot_name: external_references
+    range: ExternalReference
+    required: false
+    multivalued: true
+  Organization_organization_type:
+    name: Organization_organization_type
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/organization_type
+    description: The type of organization.  For example, a research organization,
+      a patient advocacy organization, or a professional society.
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: organization_type
+    domain: Organization
+    slot_uri: monogenic_epilepsy_atlas_schema:organization_type
+    alias: organization_type
+    owner: Organization
+    domain_of:
+    - Organization
+    is_usage_slot: true
+    usage_slot_name: organization_type
+    range: OrganizationType
+    required: true
+    multivalued: false
+  Organization_primary_location:
+    name: Organization_primary_location
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/primary_location
+    description: The location of an organization.  For example, a state and/or country.
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: primary_location
+    domain: Organization
+    slot_uri: monogenic_epilepsy_atlas_schema:primary_location
+    alias: primary_location
+    owner: Organization
+    domain_of:
+    - Organization
+    is_usage_slot: true
+    usage_slot_name: primary_location
+    range: Location
+    required: false
+    multivalued: false
+  Organization_reach:
+    name: Organization_reach
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/reach
+    description: The reach of an organization.  For example, a patient advocacy organization
+      may have a regional, national, or international reach.
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: reach
+    domain: Organization
+    slot_uri: monogenic_epilepsy_atlas_schema:reach
+    alias: reach
+    owner: Organization
+    domain_of:
+    - Organization
+    is_usage_slot: true
+    usage_slot_name: reach
+    range: Reach
+    required: false
+    multivalued: false
+  Organization_year_founded:
+    name: Organization_year_founded
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/year_founded
+    description: The year an organization was founded
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: year_founded
+    domain: Organization
+    slot_uri: monogenic_epilepsy_atlas_schema:year_founded
+    alias: year_founded
+    owner: Organization
+    domain_of:
+    - Organization
+    is_usage_slot: true
+    usage_slot_name: year_founded
+    range: integer
+    required: false
+    multivalued: false
+  Organization_in_scope:
+    name: Organization_in_scope
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/in_scope
+    description: A flag indicating whether a Gene, Condition, or Organization is in
+      scope for the Monogenic Epilepsy Atlas project
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: in_scope
+    domain: Organization
+    slot_uri: monogenic_epilepsy_atlas_schema:in_scope
+    alias: in_scope
+    owner: Organization
+    domain_of:
+    - Organization
+    is_usage_slot: true
+    usage_slot_name: in_scope
+    range: YesNoUnknown
+    required: true
+    multivalued: false
+  Organization_leader:
+    name: Organization_leader
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/leader
+    description: The leader of an organization.  For example, the president of a professional
+      society or the director of a research organization.
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: leader
+    domain: Organization
+    slot_uri: monogenic_epilepsy_atlas_schema:leader
+    alias: leader
+    owner: Organization
+    domain_of:
+    - Organization
+    is_usage_slot: true
+    usage_slot_name: leader
+    range: Person
+    required: false
+    multivalued: false
+  Organization_contact_person:
+    name: Organization_contact_person
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/contact_person
+    description: The contact person for an organization.  For example, the person
+      who is responsible for managing the organization's website or social media accounts.
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: contact_person
+    domain: Organization
+    slot_uri: monogenic_epilepsy_atlas_schema:contact_person
+    alias: contact_person
+    owner: Organization
+    domain_of:
+    - Organization
+    is_usage_slot: true
+    usage_slot_name: contact_person
+    range: Person
+    required: false
+    multivalued: false
+  Organization_contact_urls:
+    name: Organization_contact_urls
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/contact_urls
+    description: A link to a web resource that provides more information about how
+      to get in contact with an organization
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: contact_urls
+    domain: Organization
+    slot_uri: monogenic_epilepsy_atlas_schema:contact_urls
+    alias: contact_urls
+    owner: Organization
+    domain_of:
+    - Organization
+    is_usage_slot: true
+    usage_slot_name: contact_urls
+    range: uriorcurie
+    required: false
+    multivalued: true
+  Organization_logo:
+    name: Organization_logo
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/logo
+    description: A link to a web resource that provides a logo for an organization
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: logo
+    domain: Organization
+    slot_uri: monogenic_epilepsy_atlas_schema:logo
+    alias: logo
+    owner: Organization
+    domain_of:
+    - Organization
+    is_usage_slot: true
+    usage_slot_name: logo
+    range: uriorcurie
+    required: false
+    multivalued: false
+  Organization_has_registry_or_study:
+    name: Organization_has_registry_or_study
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/has_registry_or_study
+    description: A flag indicating whether an organization has a registry or study
+      for a condition or gene
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: has_registry_or_study
+    domain: Organization
+    slot_uri: monogenic_epilepsy_atlas_schema:has_registry_or_study
+    alias: has_registry_or_study
+    owner: Organization
+    domain_of:
+    - Organization
+    is_usage_slot: true
+    usage_slot_name: has_registry_or_study
+    range: YesNoUnknown
+    required: true
+    multivalued: false
+  Organization_is_czi_rao_grantee:
+    name: Organization_is_czi_rao_grantee
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/is_czi_rao_grantee
+    description: A flag indicating whether an organization is a grantee of the CZI
+      Rare as One program
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: is_czi_rao_grantee
+    domain: Organization
+    slot_uri: monogenic_epilepsy_atlas_schema:is_czi_rao_grantee
+    alias: is_czi_rao_grantee
+    owner: Organization
+    domain_of:
+    - Organization
+    is_usage_slot: true
+    usage_slot_name: is_czi_rao_grantee
+    range: YesNoUnknown
+    required: false
+    multivalued: false
+  Organization_czi_rao_cohort_year:
+    name: Organization_czi_rao_cohort_year
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/czi_rao_cohort_year
+    description: The year an organization was a grantee of the CZI Rare as One program
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: czi_rao_cohort_year
+    domain: Organization
+    slot_uri: monogenic_epilepsy_atlas_schema:czi_rao_cohort_year
+    alias: czi_rao_cohort_year
+    owner: Organization
+    domain_of:
+    - Organization
+    is_usage_slot: true
+    usage_slot_name: czi_rao_cohort_year
+    range: integer
+    required: false
+    multivalued: false
+  Organization_advocates_for_condition:
+    name: Organization_advocates_for_condition
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/advocates_for_condition
+    description: A list of conditions that an organization advocates for.  For example,
+      a patient advocacy organization may advocate for a particular condition or set
+      of conditions.
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: advocates_for_condition
+    domain: Organization
+    slot_uri: monogenic_epilepsy_atlas_schema:advocates_for_condition
+    alias: advocates_for_condition
+    owner: Organization
+    domain_of:
+    - Organization
+    is_usage_slot: true
+    usage_slot_name: advocates_for_condition
+    range: Condition
+    required: false
+    multivalued: true
+  Organization_advocates_for_gene:
+    name: Organization_advocates_for_gene
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/advocates_for_gene
+    description: A list of genes that an organization advocates for.  For example,
+      a patient advocacy organization may advocate for a particular gene or set of
+      genes.
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: advocates_for_gene
+    domain: Organization
+    slot_uri: monogenic_epilepsy_atlas_schema:advocates_for_gene
+    alias: advocates_for_gene
+    owner: Organization
+    domain_of:
+    - Organization
+    is_usage_slot: true
+    usage_slot_name: advocates_for_gene
+    range: Gene
+    required: false
+    multivalued: true
+  Organization_member_of_organization:
+    name: Organization_member_of_organization
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/member_of_organization
+    description: An organization that a given organization is a member of.  For example,
+      a patient advocacy organization may be a member of a larger umbrella organization.
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: member_of_organization
+    domain: Organization
+    slot_uri: monogenic_epilepsy_atlas_schema:member_of_organization
+    alias: member_of_organization
+    owner: Organization
+    domain_of:
+    - Organization
+    is_usage_slot: true
+    usage_slot_name: member_of_organization
+    range: Organization
+    required: false
+    multivalued: true
+  ExternalReference_link:
+    name: ExternalReference_link
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/link
+    description: A link to a web resource that provides more information about a thing
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    mappings:
+    - schema:url
+    is_a: link
+    domain: ExternalReference
+    slot_uri: schema:url
+    alias: link
+    owner: ExternalReference
+    domain_of:
+    - ExternalReference
+    is_usage_slot: true
+    usage_slot_name: link
+    range: uriorcurie
+    required: true
+  Location_state:
+    name: Location_state
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/state
+    description: The state or province where an organization is located
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: state
+    domain: Location
+    slot_uri: monogenic_epilepsy_atlas_schema:state
+    alias: state
+    owner: Location
+    domain_of:
+    - Location
+    is_usage_slot: true
+    usage_slot_name: state
+    range: UsaState
+    required: false
+    multivalued: false
+  Location_country:
+    name: Location_country
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/country
+    description: The country where an organization is located
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: country
+    domain: Location
+    slot_uri: monogenic_epilepsy_atlas_schema:country
+    alias: country
+    owner: Location
+    domain_of:
+    - Location
+    is_usage_slot: true
+    usage_slot_name: country
+    range: Country
+    required: true
+    multivalued: false
   Person_primary_email:
     name: Person_primary_email
     definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/primary_email
@@ -429,56 +1655,353 @@ slots:
     is_usage_slot: true
     usage_slot_name: primary_email
     range: string
-    pattern: ^\S+@[\S+\.]+\S+
+    required: false
+    multivalued: false
+  Person_professional_title:
+    name: Person_professional_title
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/professional_title
+    description: The professional title of a person.  For example, a researcher may
+      have the title of "Professor" or "Research Scientist".
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: professional_title
+    domain: Person
+    slot_uri: monogenic_epilepsy_atlas_schema:professional_title
+    alias: professional_title
+    owner: Person
+    domain_of:
+    - Person
+    is_usage_slot: true
+    usage_slot_name: professional_title
+    range: string
+    required: false
+    multivalued: false
 classes:
-  NamedThing:
-    name: NamedThing
-    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/NamedThing
+  Thing:
+    name: Thing
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/Thing
     description: A generic grouping for any identifiable entity
     from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
     exact_mappings:
     - schema:Thing
     slots:
-    - id
-    - name
-    - description
+    - Thing_id
+    - Thing_identity
+    slot_usage:
+      id:
+        name: id
+        required: true
+      identity:
+        name: identity
+        required: false
     class_uri: schema:Thing
-  Person:
-    name: Person
-    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/Person
-    description: Represents a Person
+  NamedThing:
+    name: NamedThing
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/NamedThing
+    description: A generic grouping for any named identifiable entity
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    exact_mappings:
+    - schema:Thing
+    is_a: Thing
+    slots:
+    - Thing_id
+    - NamedThing_identity
+    - NamedThing_name
+    - NamedThing_description
+    slot_usage:
+      identity:
+        name: identity
+        required: false
+      name:
+        name: name
+        required: true
+      description:
+        name: description
+        required: false
+    class_uri: schema:Thing
+  GeneCollection:
+    name: GeneCollection
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/GeneCollection
+    description: A holder for Gene objects
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    slots:
+    - geneCollection__genes
+    attributes:
+      genes:
+        name: genes
+        range: Gene
+        multivalued: true
+        inlined_as_list: true
+    class_uri: monogenic_epilepsy_atlas_schema:GeneCollection
+    tree_root: true
+  Condition:
+    name: Condition
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/Condition
+    description: A condition is a disease or disorder that is associated with a person.  It
+      may be a monogenic disorder, or it may be a complex disorder that is associated
+      with a monogenic disorder.
     from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
     is_a: NamedThing
     slots:
-    - id
-    - name
-    - description
+    - Thing_id
+    - NamedThing_identity
+    - NamedThing_name
+    - NamedThing_description
+    - Condition_aliases
+    - Condition_external_references
+    - Condition_reports_seizures
+    - Condition_found_in_corpus
+    - Condition_num_pages_in_corpus
+    - Condition_in_scope
+    slot_usage:
+      aliases:
+        name: aliases
+        required: false
+        multivalued: true
+      external_references:
+        name: external_references
+        required: false
+        multivalued: true
+      reports_seizures:
+        name: reports_seizures
+        required: true
+        multivalued: false
+      found_in_corpus:
+        name: found_in_corpus
+        required: true
+        multivalued: false
+      num_pages_in_corpus:
+        name: num_pages_in_corpus
+        required: false
+        multivalued: false
+      in_scope:
+        name: in_scope
+        required: true
+        multivalued: false
+    class_uri: monogenic_epilepsy_atlas_schema:Condition
+  Gene:
+    name: Gene
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/Gene
+    description: A gene is a segment of DNA that is associated with a condition.  It
+      may be a monogenic gene, or it may be a gene that is associated with a monogenic
+      gene.
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: NamedThing
+    slots:
+    - Thing_id
+    - NamedThing_identity
+    - NamedThing_name
+    - NamedThing_description
+    - Gene_aliases
+    - Gene_external_references
+    - Gene_found_in_corpus
+    - Gene_num_pages_in_corpus
+    - Gene_pathophysiologic_mechanism
+    - Gene_genes4epilepsy_listed
+    - Gene_causes_condition
+    - Gene_in_scope
+    slot_usage:
+      aliases:
+        name: aliases
+        required: false
+        multivalued: true
+      external_references:
+        name: external_references
+        required: false
+        multivalued: true
+      found_in_corpus:
+        name: found_in_corpus
+        required: true
+        multivalued: false
+      num_pages_in_corpus:
+        name: num_pages_in_corpus
+        required: false
+        multivalued: false
+      pathophysiologic_mechanism:
+        name: pathophysiologic_mechanism
+        required: false
+        multivalued: false
+      genes4epilepsy_listed:
+        name: genes4epilepsy_listed
+        required: true
+        multivalued: false
+      causes_condition:
+        name: causes_condition
+        required: false
+        multivalued: true
+      in_scope:
+        name: in_scope
+        required: true
+        multivalued: false
+    class_uri: monogenic_epilepsy_atlas_schema:Gene
+  Organization:
+    name: Organization
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/Organization
+    description: An organization is a group of people that is associated with a condition
+      or gene. It may be a research organization, a patient advocacy organization,
+      or a professional society.
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: NamedThing
+    slots:
+    - Thing_id
+    - NamedThing_identity
+    - NamedThing_name
+    - NamedThing_description
+    - Organization_aliases
+    - Organization_external_references
+    - Organization_organization_type
+    - Organization_primary_location
+    - Organization_reach
+    - Organization_year_founded
+    - Organization_in_scope
+    - Organization_leader
+    - Organization_contact_person
+    - Organization_contact_urls
+    - Organization_logo
+    - Organization_has_registry_or_study
+    - Organization_is_czi_rao_grantee
+    - Organization_czi_rao_cohort_year
+    - Organization_advocates_for_condition
+    - Organization_advocates_for_gene
+    - Organization_member_of_organization
+    slot_usage:
+      aliases:
+        name: aliases
+        required: false
+        multivalued: true
+      external_references:
+        name: external_references
+        required: false
+        multivalued: true
+      organization_type:
+        name: organization_type
+        required: true
+        multivalued: false
+      primary_location:
+        name: primary_location
+        required: false
+        multivalued: false
+      reach:
+        name: reach
+        required: false
+        multivalued: false
+      year_founded:
+        name: year_founded
+        required: false
+        multivalued: false
+      in_scope:
+        name: in_scope
+        required: true
+        multivalued: false
+      leader:
+        name: leader
+        required: false
+        multivalued: false
+      contact_person:
+        name: contact_person
+        required: false
+        multivalued: false
+      contact_urls:
+        name: contact_urls
+        required: false
+        multivalued: true
+      logo:
+        name: logo
+        required: false
+        multivalued: false
+      has_registry_or_study:
+        name: has_registry_or_study
+        required: true
+        multivalued: false
+      is_czi_rao_grantee:
+        name: is_czi_rao_grantee
+        required: false
+        multivalued: false
+      czi_rao_cohort_year:
+        name: czi_rao_cohort_year
+        required: false
+        multivalued: false
+      advocates_for_condition:
+        name: advocates_for_condition
+        required: false
+        multivalued: true
+      advocates_for_gene:
+        name: advocates_for_gene
+        required: false
+        multivalued: true
+      member_of_organization:
+        name: member_of_organization
+        required: false
+        multivalued: true
+    class_uri: monogenic_epilepsy_atlas_schema:Organization
+  ExternalReference:
+    name: ExternalReference
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/ExternalReference
+    description: An external reference is a reference to an entity in an external
+      resource.  It may be a reference to a concept in an ontology, or it may be a
+      reference to a record in a database.
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: NamedThing
+    slots:
+    - Thing_id
+    - NamedThing_identity
+    - NamedThing_name
+    - NamedThing_description
+    - ExternalReference_link
+    slot_usage:
+      link:
+        name: link
+        required: true
+    class_uri: monogenic_epilepsy_atlas_schema:ExternalReference
+  Location:
+    name: Location
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/Location
+    description: A location is a physical place where an organization is located.  It
+      may be a state and/or country.
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: NamedThing
+    slots:
+    - Thing_id
+    - NamedThing_identity
+    - NamedThing_name
+    - NamedThing_description
+    - Location_state
+    - Location_country
+    slot_usage:
+      state:
+        name: state
+        required: false
+        multivalued: false
+      country:
+        name: country
+        required: true
+        multivalued: false
+    class_uri: monogenic_epilepsy_atlas_schema:Location
+  Person:
+    name: Person
+    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/Person
+    description: A person is an individual who is associated with an organization,
+      condition or gene.  It may be a researcher, a patient, or a caregiver.
+    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+    is_a: NamedThing
+    slots:
+    - Thing_id
+    - NamedThing_identity
+    - NamedThing_name
+    - NamedThing_description
     - Person_primary_email
-    - birth_date
-    - age_in_years
-    - vital_status
+    - Person_professional_title
     slot_usage:
       primary_email:
         name: primary_email
-        pattern: ^\S+@[\S+\.]+\S+
+        required: false
+        multivalued: false
+      professional_title:
+        name: professional_title
+        required: false
+        multivalued: false
     class_uri: monogenic_epilepsy_atlas_schema:Person
-  PersonCollection:
-    name: PersonCollection
-    definition_uri: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/PersonCollection
-    description: A holder for Person objects
-    from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
-    slots:
-    - personCollection__people
-    attributes:
-      people:
-        name: people
-        range: Person
-        multivalued: true
-        inlined_as_list: true
-    class_uri: monogenic_epilepsy_atlas_schema:PersonCollection
-    tree_root: true
 metamodel_version: 1.12.0
 source_file: monogenic_epilepsy_atlas_schema.yaml
-source_file_date: '2026-10-22T18:59:58'
-source_file_size: 2424
+source_file_date: '2026-10-22T19:00:45'
+source_file_size: 15311
 

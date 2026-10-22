@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/PersonStatus/">
+        <link rel="canonical" href="https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/state/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>Enum: PersonStatus - monogenic-epilepsy-atlas-schema</title>
+        <title>Slot: state - monogenic-epilepsy-atlas-schema</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#enum-personstatus" class="md-skip">
+        <a href="#slot-state" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Enum: PersonStatus
+              Slot: state
             
           </span>
         </div>
@@ -365,10 +365,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#permissible-values" class="md-nav__link">
+  <a href="#applicable-classes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Permissible Values
+        Applicable Classes
       
     </span>
   </a>
@@ -376,13 +376,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#slots" class="md-nav__link">
+  <a href="#properties" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Slots
+        Properties
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-and-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type and Range
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -411,6 +428,17 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mappings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mappings
+      
+    </span>
+  </a>
   
 </li>
       
@@ -446,49 +474,45 @@
   
 
 
-<h1 id="enum-personstatus">Enum: PersonStatus</h1>
-<p><em>The vital status of a person</em></p>
+<h1 id="slot-state">Slot: state</h1>
+<p><em>The state or province where an organization is located</em></p>
 <div>
-<p>URI: <a href="https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/PersonStatus">monogenic_epilepsy_atlas_schema:PersonStatus</a></p>
-<h2 id="permissible-values">Permissible Values</h2>
-<table>
-<thead>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ALIVE</td>
-<td>PATO:0001421</td>
-<td>the person is living</td>
-</tr>
-<tr>
-<td>DEAD</td>
-<td>PATO:0001422</td>
-<td>the person is deceased</td>
-</tr>
-<tr>
-<td>UNKNOWN</td>
-<td>None</td>
-<td>the vital status is not known</td>
-</tr>
-</tbody>
-</table>
-<h2 id="slots">Slots</h2>
+<p>URI: <a href="https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/state">monogenic_epilepsy_atlas_schema:state</a></p>
+<!-- no inheritance hierarchy -->
+<h2 id="applicable-classes">Applicable Classes</h2>
 <table>
 <thead>
 <tr>
 <th>Name</th>
 <th>Description</th>
+<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="../vital_status/">vital_status</a></td>
-<td>living or dead status</td>
+<td><a href="../Location/">Location</a></td>
+<td>A location is a physical place where an organization is located</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="properties">Properties</h2>
+<h3 id="type-and-range">Type and Range</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Range</td>
+<td><a href="../UsaState/">UsaState</a></td>
+</tr>
+<tr>
+<td>Domain Of</td>
+<td><a href="../Location/">Location</a></td>
 </tr>
 </tbody>
 </table>
@@ -497,26 +521,34 @@
 <ul>
 <li>from schema: <a href="https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema">https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema</a></li>
 </ul>
+<h2 id="mappings">Mappings</h2>
+<table>
+<thead>
+<tr>
+<th>Mapping Type</th>
+<th>Mapped Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>self</td>
+<td>monogenic_epilepsy_atlas_schema:state</td>
+</tr>
+<tr>
+<td>native</td>
+<td>monogenic_epilepsy_atlas_schema:state</td>
+</tr>
+</tbody>
+</table>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
-<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PersonStatus</span>
-<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The vital status of a person</span>
+<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">state</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The state or province where an organization is located</span>
 <span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema</span>
 <span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
-<span class="nt">permissible_values</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">ALIVE</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ALIVE</span>
-<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">the person is living</span>
-<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PATO:0001421</span>
-<span class="w">  </span><span class="nt">DEAD</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DEAD</span>
-<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">the person is deceased</span>
-<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PATO:0001422</span>
-<span class="w">  </span><span class="nt">UNKNOWN</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">UNKNOWN</span>
-<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">the vital status is not known</span>
-<span class="w">    </span><span class="nt">todos</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">map this to an ontology</span>
+<span class="nt">domain_of</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Location</span>
+<span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">UsaState</span>
 </code></pre></div>
 </details>
 </div>

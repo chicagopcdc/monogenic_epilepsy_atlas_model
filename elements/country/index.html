@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/birth_date/">
+        <link rel="canonical" href="https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/country/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>Slot: birth_date - monogenic-epilepsy-atlas-schema</title>
+        <title>Slot: country - monogenic-epilepsy-atlas-schema</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-birth_date" class="md-skip">
+        <a href="#slot-country" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: birth_date
+              Slot: country
             
           </span>
         </div>
@@ -474,10 +474,10 @@
   
 
 
-<h1 id="slot-birth_date">Slot: birth_date</h1>
-<p><em>Date on which a person is born</em></p>
+<h1 id="slot-country">Slot: country</h1>
+<p><em>The country where an organization is located</em></p>
 <div>
-<p>URI: <a href="http://schema.org/birthDate">schema:birthDate</a></p>
+<p>URI: <a href="https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/country">monogenic_epilepsy_atlas_schema:country</a></p>
 <!-- no inheritance hierarchy -->
 <h2 id="applicable-classes">Applicable Classes</h2>
 <table>
@@ -490,9 +490,9 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../Person/">Person</a></td>
-<td>Represents a Person</td>
-<td>no</td>
+<td><a href="../Location/">Location</a></td>
+<td>A location is a physical place where an organization is located</td>
+<td>yes</td>
 </tr>
 </tbody>
 </table>
@@ -508,15 +508,11 @@
 <tbody>
 <tr>
 <td>Range</td>
-<td><a href="../Date/">Date</a></td>
+<td><a href="../Country/">Country</a></td>
 </tr>
 <tr>
 <td>Domain Of</td>
-<td><a href="../Person/">Person</a></td>
-</tr>
-<tr>
-<td>Slot URI</td>
-<td><a href="http://schema.org/birthDate">schema:birthDate</a></td>
+<td><a href="../Location/">Location</a></td>
 </tr>
 </tbody>
 </table>
@@ -536,24 +532,23 @@
 <tbody>
 <tr>
 <td>self</td>
-<td>schema:birthDate</td>
+<td>monogenic_epilepsy_atlas_schema:country</td>
 </tr>
 <tr>
 <td>native</td>
-<td>monogenic_epilepsy_atlas_schema:birth_date</td>
+<td>monogenic_epilepsy_atlas_schema:country</td>
 </tr>
 </tbody>
 </table>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
-<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">birth_date</span>
-<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Date on which a person is born</span>
+<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">country</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The country where an organization is located</span>
 <span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema</span>
 <span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
-<span class="nt">slot_uri</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">schema:birthDate</span>
 <span class="nt">domain_of</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Person</span>
-<span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">date</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Location</span>
+<span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Country</span>
 </code></pre></div>
 </details>
 </div>

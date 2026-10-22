@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/people/">
+        <link rel="canonical" href="https://bfurner.github.io/monogenic-epilepsy-atlas-schema/elements/is_czi_rao_grantee/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>Slot: people - monogenic-epilepsy-atlas-schema</title>
+        <title>Slot: is_czi_rao_grantee - monogenic-epilepsy-atlas-schema</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-people" class="md-skip">
+        <a href="#slot-is_czi_rao_grantee" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: people
+              Slot: is_czi_rao_grantee
             
           </span>
         </div>
@@ -398,17 +398,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#slot-characteristics" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Slot Characteristics
-      
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -485,9 +474,10 @@
   
 
 
-<h1 id="slot-people">Slot: people</h1>
+<h1 id="slot-is_czi_rao_grantee">Slot: is_czi_rao_grantee</h1>
+<p><em>A flag indicating whether an organization is a grantee of the CZI Rare as One program</em></p>
 <div>
-<p>URI: <a href="https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/people">monogenic_epilepsy_atlas_schema:people</a></p>
+<p>URI: <a href="https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/is_czi_rao_grantee">monogenic_epilepsy_atlas_schema:is_czi_rao_grantee</a></p>
 <!-- no inheritance hierarchy -->
 <h2 id="applicable-classes">Applicable Classes</h2>
 <table>
@@ -500,9 +490,9 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../PersonCollection/">PersonCollection</a></td>
-<td>A holder for Person objects</td>
-<td>no</td>
+<td><a href="../Organization/">Organization</a></td>
+<td>An organization is a group of people that is associated with a condition or g...</td>
+<td>yes</td>
 </tr>
 </tbody>
 </table>
@@ -518,44 +508,11 @@
 <tbody>
 <tr>
 <td>Range</td>
-<td><a href="../Person/">Person</a></td>
+<td><a href="../YesNoUnknown/">YesNoUnknown</a></td>
 </tr>
 <tr>
 <td>Domain Of</td>
-<td><a href="../PersonCollection/">PersonCollection</a></td>
-</tr>
-<tr>
-<td>### Cardinality and Requirements</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Multivalued</td>
-<td>Yes</td>
-</tr>
-</tbody>
-</table>
-<h3 id="slot-characteristics">Slot Characteristics</h3>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Owner</td>
-<td><a href="../PersonCollection/">PersonCollection</a></td>
+<td><a href="../Organization/">Organization</a></td>
 </tr>
 </tbody>
 </table>
@@ -575,26 +532,24 @@
 <tbody>
 <tr>
 <td>self</td>
-<td>monogenic_epilepsy_atlas_schema:people</td>
+<td>monogenic_epilepsy_atlas_schema:is_czi_rao_grantee</td>
 </tr>
 <tr>
 <td>native</td>
-<td>monogenic_epilepsy_atlas_schema:people</td>
+<td>monogenic_epilepsy_atlas_schema:is_czi_rao_grantee</td>
 </tr>
 </tbody>
 </table>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
-<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">people</span>
+<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">is_czi_rao_grantee</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">A flag indicating whether an organization is a grantee of the CZI Rare</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">as One program</span>
 <span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema</span>
 <span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
-<span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PersonCollection</span>
 <span class="nt">domain_of</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PersonCollection</span>
-<span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Person</span>
-<span class="nt">multivalued</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="nt">inlined</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="nt">inlined_as_list</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Organization</span>
+<span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">YesNoUnknown</span>
 </code></pre></div>
 </details>
 </div>
