@@ -1,5 +1,5 @@
 ---
-id: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
+id: https://w3id.org/chicagopcdc/monogenic-epilepsy-atlas-schema
 name: monogenic-epilepsy-atlas-schema
 title: Monogenic Epilepsy Atlas Schema
 description: |-
@@ -7,7 +7,7 @@ description: |-
 license: Apache-2.0
 
 prefixes:
-  monogenic_epilepsy_atlas_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/
+  monogenic_epilepsy_atlas_schema: https://w3id.org/chicagopcdc/monogenic-epilepsy-atlas-schema/
   linkml: https://w3id.org/linkml/
   schema: http://schema.org/
 default_prefix: monogenic_epilepsy_atlas_schema
