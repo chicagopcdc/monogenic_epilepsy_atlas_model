@@ -362,9 +362,9 @@ enums:
   YesNoUnknown:
     description: A simple enumeration for yes, no, or unknown
     permissible_values:
-      YES:
+      "YES":
         description: yes
-      NO:
+      "NO":
         description: no
       UNKNOWN:
         description: unknown

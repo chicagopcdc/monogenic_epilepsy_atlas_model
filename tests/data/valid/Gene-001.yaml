@@ -1,0 +1,7 @@
+# Example data object
+---
+id: "001"
+name: Gene 001
+in_scope: "YES"
+found_in_corpus: "YES"
+genes4epilepsy_listed: "YES"
