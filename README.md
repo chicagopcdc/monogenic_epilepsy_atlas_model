@@ -6,7 +6,6 @@ This is the LinkML schema for the Monogenic Epilepsy Atlas schema
 
 ## Documentation Website
 
-[https://bfurner.github.io/monogenic-epilepsy-atlas-schema](https://bfurner.github.io/monogenic-epilepsy-atlas-schema)
 
 ## Repository Structure
 
