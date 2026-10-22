@@ -18,8 +18,6 @@ jobs:
     # Grant GITHUB_TOKEN the permissions required to make a gh-pages deployment
     permissions:
       contents: write  # to let mkdocs write the new docs
-      pages: write     # to deploy to Pages
-      id-token: write  # allow to generate an OpenID Connect (OIDC) token
 
     steps:
       # https://github.com/actions/checkout
