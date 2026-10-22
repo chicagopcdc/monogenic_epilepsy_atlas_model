@@ -1,5 +1,5 @@
 ---
-site_name: "monogenic-epilepsy-atlas-schema"
+site_name: "Monogenic Epilepsy Atlas Schema"
 theme:
   # https://www.mkdocs.org/user-guide/configuration/#theme
   name: material
@@ -60,9 +60,9 @@ watch:
   - src/monogenic_epilepsy_atlas_schema/schema
 
 nav:
-  - Home: index.md
+#  - Home: index.md
   - Schema: elements/index.md
-  - About: about.md
+#  - About: about.md
 
 exclude_docs: |
   /templates-linkml/
