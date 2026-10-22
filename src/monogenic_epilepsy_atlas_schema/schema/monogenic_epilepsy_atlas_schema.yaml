@@ -5,8 +5,6 @@ title: Monogenic Epilepsy Atlas Schema
 description: |-
   This is the LinkML schema for the Monogenic Epilepsy Atlas schema
 license: Apache-2.0
-see_also:
-  - https://bfurner.github.io/monogenic-epilepsy-atlas-schema
 
 prefixes:
   monogenic_epilepsy_atlas_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema/
