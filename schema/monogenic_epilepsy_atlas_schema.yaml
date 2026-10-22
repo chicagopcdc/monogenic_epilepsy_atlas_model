@@ -293,11 +293,11 @@ enums:
     description: A simple enumeration for yes, no, or unknown
     from_schema: https://w3id.org/bfurner/monogenic-epilepsy-atlas-schema
     permissible_values:
-      'True':
-        text: 'True'
+      'YES':
+        text: 'YES'
         description: 'True'
-      'False':
-        text: 'False'
+      'NO':
+        text: 'NO'
         description: 'False'
       UNKNOWN:
         text: UNKNOWN
@@ -2000,6 +2000,6 @@ classes:
     class_uri: monogenic_epilepsy_atlas_schema:Person
 metamodel_version: 1.12.0
 source_file: monogenic_epilepsy_atlas_schema.yaml
-source_file_date: '2026-10-22T19:29:15'
-source_file_size: 15239
+source_file_date: '2026-10-22T20:10:18'
+source_file_size: 15243
 
